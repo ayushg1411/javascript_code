@@ -1,0 +1,221 @@
+/* style.css */
+.bold {
+    font-weight: bold;
+  }
+  
+  .bold-italic-blue {
+    color :blue;
+    font-weight: bold;
+    font-style: italic;
+  
+  }
+  .heading{
+    text-align :center;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .sub-heading{
+    text-align :center;
+    font-weight: bold;
+    color: gray;
+  }
+
+  img{
+    min-width: 100px;
+    min-height: 100px;
+     
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+  }
+  
+  .image-hover {
+    border: 2px solid black;
+    transition: transform 0.2s;
+  }
+
+  
+  .name-cond {
+    display:none;
+  }
+  .image-hover:hover +  .name-cond {
+    display: block; /* Show the name when hovering over the image */
+}
+  .image-hover:hover  {
+     
+ 
+    transform: scale(1.1);
+  }
+  
+.fix-size{
+width:300px;
+
+}
+.fix-height{
+  height: 180px;
+  
+  }
+  .header-row{
+    text-align: center;
+    vertical-align:auto;
+  }
+  .data-row{
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .container{
+    min-height:600px;
+  }
+
+
+
+
+
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .popup-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 20px;
+  }
+
+  .popup-form h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .form-group input:invalid {
+    border-color: red;
+  }
+
+  .form-group input:valid {
+    border-color: green;
+  }
+
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .form-buttons .submit-btn {
+    background-color: #28a745;
+    color: white;
+  }
+
+  .form-buttons .cancel-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+
+ 
+
+#animalForm input,
+#animalForm select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#animalForm input:focus,
+#animalForm select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Placeholder styling for the dropdown */
+#animalForm select:invalid {
+  color: gray;
+}
+
+#animalForm select option {
+  color: #333;
+}
+
+/* Buttons styling */
+#animalForm .form-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#animalForm .submit-btn,
+#animalForm .cancel-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.def{
+  margin-left: 7%;
+}
+
+
+/* Responsive design */
+@media (max-width: 500px) {
+  #animalForm {
+    width: 90%;
+    padding: 15px;
+  }
+
+  #animalForm input,
+  #animalForm select {
+    padding: 8px;
+  }
+
+  #animalForm .submit-btn,
+  #animalForm .cancel-btn {
+    padding: 8px 15px;
+  }
+}
